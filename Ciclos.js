@@ -21,19 +21,19 @@
 // }
 
 
-const probandoFor = () =>{
+// const probandoFor = () =>{
     
-    let contador = 0
+//     let contador = 0
 
-    for (let i = 0 ; o <= 10 ; i++){
-        if( i % 2 !== 0 ){
-            contador += 1
-        }
-    }
+//     for (let i = 0 ; o <= 10 ; i++){
+//         if( i % 2 !== 0 ){
+//             contador += 1
+//         }
+//     }
 
-    return contador
+//     return contador
 
-}
+// }
 
 
 // # let contador = 0
@@ -47,3 +47,38 @@ const probandoFor = () =>{
 // #     }
 
 //     # return contador
+
+
+
+//WHHILE
+
+// const probandoFor = (numero)=>{
+
+//     let contador = 0
+
+//     let i = 0
+
+//     do{
+
+//         if( i % 2 !== 0){
+//             contador += 1
+
+//         }
+
+//         i++
+
+//     }while( i<= numero)
+
+//     return contador
+// }
+
+// cosnt probandoFor = (numero)=>{
+
+//     let i = 20
+
+//     do{
+//         console.log(i)
+//         i++
+//     }while (i<=numero)
+// }
+
