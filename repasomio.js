@@ -208,12 +208,27 @@
 // }
 
 
-let puedePasar = "Cosme Fulanito";
+// let puedePasar = "Cosme Fulanito";
 
-if(puedePasar === "Cosme Fulanito"){
-    console.log("false");
+// if(puedePasar === "Cosme Fulanito"){
+//     console.log("false");
 
-}else (puedePasar === "mily")
-{
-    console.log("true");
+// }else (puedePasar === "mily")
+// {
+//     console.log("true");
+// }
+
+
+let finDeSemana = finDeSemana;
+    
+
+switch  (dia) {
+    case "viernes":
+        console.log("bonito dia");
+        break;
+    case "lunes":
+        console.log("feo dia");
+        break;
 }
+
+

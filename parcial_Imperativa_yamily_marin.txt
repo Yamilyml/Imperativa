@@ -1,0 +1,105 @@
+//Yamily Marin Lopez Camada 6
+
+
+//EJERCICIO 1
+//Realizar una función que reciba por parámetro dos valores, el primero será numérico y el segundo booleano. Si el número es par y el booleano es true entonces retornar “Ha pasado la condición”. En cambio, si el número es impar y el booleano es false retornar “No ha pasado la condición”. Para cualquier otro caso, retornar -1
+
+
+
+const parImpar = (num1, booleano)=>{
+
+    if(num1 % 2 == 0 ){
+    return "Ha pasado la condicion";
+}
+
+else if(booleano == true){
+    return "Ha pasado la condicion";
+
+}else{
+    return "No ha pasado la condicion" ;
+}
+}
+
+console.log(parImpar(5));
+
+
+
+
+// //EJERCICIO 2
+
+// Realizar una función que indique si una persona se encuentra apta para una competencia física. Para eso, debemos realizar una función  que reciba dos parámetros
+
+// Si ha entregado sus estudios y es mayor o igual de 18 años: retorna un valor booleano true.
+// Si ha entregado sus estudios pero es menor de 18 años: retorna un string que diga “Sólo puedes competir con un adulto acompañante”.
+// Para cualquier otro caso: retorna un valor booleano false.
+
+
+const aptitud = (edad, estudios)=>{
+
+
+    if(edad >= 18 ,  estudios === 'medicina'){
+        console.log(true);
+    }else if(edad <18 , estudios === "medicina"){
+        console.log("Sólo puedes competir con un adulto acompañante");
+    }else{
+        console.log(false);
+    }
+
+}
+
+let competencia = aptitud("5", "medicina");
+console.log(competencia);
+
+
+
+
+// // EJERCICIO 3
+// // Realizar una función que reciba un array como parámetro, y lo recorra para filtrar los objetos cuya cantidad de páginas sea mayor a 300. La función deberá retornar un nuevo arreglo con los libros que cumplan con la condición antes mencionada.
+// // Ejecutar el correspondiente llamado a la función realizada en el inciso anterior para mostrar su correcto funcionamiento.
+
+
+let libros = [
+    {
+        nombre : "historiasInconscientes",
+        autor : "Gabriel Rolón",
+        paginas: 352
+    },
+    {
+        nombre : "operacionMasacre",
+        autor : "Rodolfo Walsh",
+        paginas : 236
+    },
+    {
+        nombre   : "elAlquimista",
+        autor : "Paulo Coehlo",
+        paginas: 192
+    },
+    {
+        nombre  : "elCampamento",
+        autor : "Blue Jeans",
+        paginas: 480,
+        buscar : function (COUNT = 300){
+            return this.paginas;
+    }
+    
+    }
+]
+
+let libros2  ={
+    paginas : libros,
+    consultarPaginas : function(paginas){
+        for(let i=0; i<this.paginas.length; i++){
+            if(this.paginas[i].paginas==300){
+                return this.paginas[i]
+    }
+}
+}
+}
+
+let paginasLibros = libros.paginas;
+console.log(paginasLibros)
+
+
+
+
+
