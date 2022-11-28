@@ -110,27 +110,119 @@
 
 //recorrer columna
 
-let matrix = [
-    [1, 2, 5],
-    [5, 4, 1],
-    [5, 4, 4],
-]
+// let matrix = [
+//     [1, 2, 5],
+//     [5, 4, 1],
+//     [5, 4, 4],
+// ]
 
-const recorrerCol = (mat)=> {
+// const recorrerCol = (mat)=> {
 
-    let acc = 0 
+//     let acc = 0 
 
-    for (let i=0; i < mat.length; i++){
-        acc += mat[1][2]
+//     for (let i=0; i < mat.length; i++){
+//         acc += mat[1][2]
 
-       
+
+//     }
+// return acc
+// }
+
+// console.log(recorrerCol)
+// recorrerCol(matrix)
+
+
+// let gastos = [
+// ["1135", "2500","900", "1600", "2800", "3650","1100"],
+// ["1750", "1890", "1900", "1300", "898", "1750", "2800"] ,
+// ["1750" , "1150", "1690", "1900", "1770", "4500", "2560"] ,
+// ["800", "1250", "1430", "2100", "1980", "1270","950"],
+
+// ];
+
+// console.log(gastos);
+
+
+
+// const totalSemana1 = (mat, numSemana)=> {
+
+//     let posicionSemana = numSemana -1 
+//     let acc = 0
+//     for(let i=0; i < mat[posicionSemana].length; i++){
+//         acc += mat[posicionSemana][i]
+//     }
+//     return acc
+// }
+
+// let totalSemanaTres = totalSemana1(gastos, 3)
+// console.log(totalSemanaTres);
+
+
+
+// const totalDiario = (mat, numDia )=> {
+
+//     let posicionDiario = numDia -1 
+//     let acc = 0
+//     for(let i=0; i < mat[posicionDiario].length; i++) {
+//         acc += mat[posicionDiario][i]
+// }
+
+// return acc
+// }
+
+// let totaSabados = totalDiario(gastos2, 6)
+// console.log(totalSabados);
+
+
+//el valor que mas se gasto
+//en que semana se gasto mas 
+//que dia se gasto mas 
+
+
+let gastos = [
+    ["1135", "2500","900", "1600", "2800", "3650","1100"],
+    ["1750", "1890", "1900", "1300", "898", "1750", "2800"] ,
+    ["1750" , "1150", "1690", "1900", "1770", "4500", "2560"] ,
+    ["800", "1250", "1430", "2100", "1980", "1270","950"],
+    
+    ]
+
+
+    let encontrarDiaMayor = mat =>{
+
+        let mayor = mat[0][0]
+
+        let semana = 0
+        let dia = 0 
+        
+        
+        
+        for (let i= 0; i < mat.length; i++) {
+
+            for (let j= 0; j < mat[i].length; j++) {
+                
+                if( mayor < mat[i][j] ) {
+                    mayor = mat[i][j]
+                    semana = i
+                    dia = j 
+
+                }
+                mat[i][j ]
+        }
+
+
     }
-return acc
+    return mayor 
 }
 
-console.log(recorrerCol)
-recorrerCol(matrix)
 
 
+let semanaFinal = semana + 1
+let diaFinal = dia + 1  
 
+console.log(semana + 1);
+console.log(dia + 1);
+
+let diaMayor = encontrarDiaMayor(gastos4)
+console.log(diaMayor);
 
